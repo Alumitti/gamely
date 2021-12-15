@@ -41,12 +41,12 @@ function GameContainer({filterGamesList, currentUser}) {
     let gameFactory = () => {
         return games.map(game => {
             return(
-                <div>
+                <div className="game-card">
                     <h1>{game.name}</h1>
                     <img src={game.image} alt={game.name} className="images"/>
                     <h3>Genre: {game.genre}</h3>
-                    {!!currentUser ? <button onClick={favoriteGame} id={game.id}>Favorite</button> : null}
-                    {!!currentUser ?  <button onClick={wishlistGame} id={game.id}>Wishlist</button> : null}
+                    {!!currentUser ? <button onClick={favoriteGame} className="button" id={game.id}>Favorite</button> : null}
+                    {!!currentUser ?  <button onClick={wishlistGame} className="button" id={game.id}>Wishlist</button> : null}
                 </div>
             )
         })

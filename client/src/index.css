@@ -1,5 +1,7 @@
 .images {
     max-width: 400px;
+    min-height: 400px;
+    border: 3px solid black;
 }
 
 .button {
@@ -24,4 +26,20 @@
 .password {
     max-width: 250px;
     margin-bottom: 10px;
+}
+
+.input-box {
+    border-radius: 10px;
+}
+
+.game-card {
+    border: 3px solid black;
+    width: 20%;
+    padding: 15px;
+    margin: 10px;
+    float: left;
+    min-height: 500px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 5px 7px #8888;
 }

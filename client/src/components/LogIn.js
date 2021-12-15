@@ -44,10 +44,8 @@ function LogIn({ setCurrentUser, currentUser }) {
 
 
         <form id="LogInform" onSubmit={handleSubmit}><br></br>
-                <label className="user">Username:</label>
-                <input type="text" id="username" className="username" onChange={updateUser}></input><br></br>
-                <label className="pass">Password:</label>
-                <input type="password" id="password" className="password" onChange={updatePw}></input><br></br><br></br>
+                <input type="text" id="username" className="username input-box" placeholder="Username" onChange={updateUser}></input><br></br>
+                <input type="password" id="password" className="password input-box" placeholder="Password" onChange={updatePw}></input><br></br><br></br>
                 <input className="button" type="submit" value="Login" ></input>
             </form>
     </div>

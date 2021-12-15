@@ -18,7 +18,7 @@ function FavoriteGames() {
     let favouriteGameFactory = () => {
         return favouriteGames.map(game => {
             return(
-                <div>
+                <div className="game-card">
                     <h1>{game.name}</h1>
                     <img src={game.image} alt={game.name} className="images"/>
                     <h3>Genre: {game.genre}</h3>
@@ -29,9 +29,11 @@ function FavoriteGames() {
 
     return(
         <div>
-            <NavLink to="/">
-            <button>Home</button>
-            </NavLink>
+            <div>
+                <NavLink to="/">
+                    <button className="button">Home</button>
+                </NavLink>
+            </div>
             {favouriteGameFactory()}
 
         </div>
